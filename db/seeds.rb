@@ -28,8 +28,7 @@ expense = Expense.create(date: Faker::Date.backward(50),
             amount: Faker::Number.decimal(2),
             category: Category.sample, 
             description: Faker::Hipster.sentence,
-            user_id: Faker::Number.between(1, 11),
-            id: Faker::Crypto.md5
+            user_id: Faker::Number.between(1, 11)
             ) 
 puts expense.inspect            
 end

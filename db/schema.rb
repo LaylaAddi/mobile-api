@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20170307113050) do
   enable_extension "pgcrypto"
 
   create_table "expenses", id: :uuid, default: -> { "uuid_generate_v1()" }, force: :cascade do |t|
-    t.date "date"
+    t.string "date"
     t.decimal "amount"
     t.decimal "user_id"
     t.string "category"

@@ -52,6 +52,7 @@ class ExpensesController < ApplicationController
                                      :user_id, 
                                      :category, 
                                      :description
+                                     
                                      )
     end
 end
